@@ -101,15 +101,15 @@ private:
             return;
         }
         cout << node -> value << " ";
-        inorderRecursive(node->left);
-        inorderRecursive(node->right);
+        preorderRecursive(node->left);
+        preorderRecursive(node->right);
     }
     void postorderRecursive(Node* node) {
         if (node == nullptr) { // checking for next to leaf node
             return;
         }
-        inorderRecursive(node->left);
-        inorderRecursive(node->right);
+        postorderRecursive(node->left);
+        postorderRecursive(node->right);
         cout << node -> value << " ";
     }
     Node* deleteNodeRecursive(Node* node, int target) {
