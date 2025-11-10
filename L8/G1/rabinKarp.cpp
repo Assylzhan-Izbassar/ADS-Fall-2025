@@ -7,7 +7,7 @@ int charToInt(char c) {
     return c - 'a' + 1;
 }
 
-vector<int> rabinKarp(string const& s, string const& t) {
+vector<int> rabinKarp(string s, string t) {
     int p = 31;
     long long mod = 1e9 + 7;
 
